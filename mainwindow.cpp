@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "heroes.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,7 +16,9 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::generateHeroes() {
+    QList<Heroes*> hero_list;
     for(int i=0; i<5; i++) {
-
+        hero_list.at(i) = new Heroes();
     }
+    //output
 }

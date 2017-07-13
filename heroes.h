@@ -6,6 +6,10 @@ class Heroes
 {
 public:
     Heroes();
+    QList<QString>* getHeroNameList();
+    QList<QString>* getHeroRaceList();
+    QList<QString>* getHeroClassList();
+    QList<QString>* getHeroIdeologyList();
 
 private:
     QString hero_name;
