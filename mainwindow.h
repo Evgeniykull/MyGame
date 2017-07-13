@@ -15,10 +15,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void generateHeroes();
+
 private:
     Ui::MainWindow *ui;
 
-    void generateHeroes();
 };
 
 #endif // MAINWINDOW_H

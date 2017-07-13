@@ -32,11 +32,8 @@
           </property>
           <widget class="QWidget" name="page">
            <layout class="QFormLayout" name="formLayout">
-            <item row="1" column="0">
+            <item row="2" column="0">
              <widget class="QListView" name="listView"/>
-            </item>
-            <item row="1" column="1">
-             <widget class="QListView" name="listView_2"/>
             </item>
             <item row="0" column="0" colspan="2">
              <widget class="QPushButton" name="pushButton">
@@ -45,15 +42,36 @@
               </property>
              </widget>
             </item>
+            <item row="2" column="1">
+             <widget class="QTableWidget" name="tableWidget">
+              <column>
+               <property name="text">
+                <string>Name</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Race</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Class</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ideology</string>
+               </property>
+              </column>
+             </widget>
+            </item>
            </layout>
           </widget>
           <widget class="QWidget" name="page_2"/>
          </widget>
         </item>
        </layout>
-       <zorder>listWidget</zorder>
-       <zorder>listView</zorder>
-       <zorder>stackedWidget</zorder>
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
