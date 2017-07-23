@@ -32,9 +32,6 @@
           </property>
           <widget class="QWidget" name="page">
            <layout class="QFormLayout" name="formLayout">
-            <item row="2" column="0">
-             <widget class="QListView" name="listView"/>
-            </item>
             <item row="0" column="0" colspan="2">
              <widget class="QPushButton" name="pushButton">
               <property name="text">
@@ -44,6 +41,9 @@
             </item>
             <item row="2" column="1">
              <widget class="QTableWidget" name="tableWidget">
+              <property name="editTriggers">
+               <set>QAbstractItemView::SelectedClicked</set>
+              </property>
               <column>
                <property name="text">
                 <string>Name</string>
@@ -66,6 +66,13 @@
               </column>
              </widget>
             </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>Buy</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
           <widget class="QWidget" name="page_2"/>
@@ -75,8 +82,34 @@
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>MyHeroes</string>
        </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget_2">
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Race</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Class</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ideology</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>

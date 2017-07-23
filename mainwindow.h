@@ -17,6 +17,7 @@ public:
 
 private slots:
     void generateHeroes();
+    void buyHeroes();
 
 private:
     Ui::MainWindow *ui;
